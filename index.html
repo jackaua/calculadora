@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora Show</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1 style="color: white;">Calculadora</h1>
+
+        Primeiro Número (Base/Comprimento)<br>
+        <input id="n1" type="number" /> <br><br>
+        Segundo Número (Altura/Largura)<br>
+        <input id="n2" type="number" /> <br><br>
+        Terceiro Número (Outro Lado/Raio/Outro Lado do Triângulo)<br>
+        <input id="n3" type="number" /> <br>
+
+        <p>Selecione qual formula calcular:</p>
+        <select id="calculo">
+            <option value="somar">Somar</option>
+            <option value="subtrair">Subtrair</option>
+            <option value="multiplicar">Multiplicar</option>
+            <option value="dividir">Dividir</option>
+            <option value="areaQuadrado">Área do Quadrado</option>
+            <option value="areaRetangulo">Área do Retângulo</option>
+            <option value="areaTrapezio">Área do Trapézio</option>
+            <option value="areaLosango">Área do Losango</option>
+            <option value="areaTrianguloRetangulo">Área do Triângulo Retângulo</option>
+            <option value="areaTrianguloEquilatero">Área do Triângulo Equilátero</option>
+            <option value="areaCircunferencia">Área da Circunferência</option>
+        </select> <br><br>
+
+        <button onclick="calcular()">Calcular</button>
+
+        <p>Resultado: <span class="result" id="resultado"></span></p>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

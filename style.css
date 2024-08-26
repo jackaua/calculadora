@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('background.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.main-container {
+    background-color: #181818;
+    padding: 30px;
+    box-shadow: 0 7px 8px   rgba(0, 38, 252, 0.3);
+    border-radius: 7px;
+    text-align: center;
+    width: 400px;
+    transition: transform 0.7s ease;
+}
+
+.main-container:hover {
+    transform: translateY(-20px); 
+}
+
+.main-container h1 {
+    margin-bottom: 20px;
+    color: #000000; 
+}
+
+.main-container input, .main-container select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.main-container button {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adicionei a transformação aqui */
+}
+
+.main-container button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Faz o botão subir um pouco quando o mouse passa por cima */
+}
+
+.main-container button:focus {
+    outline: none;
+}
+
+.result {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #007bff;
+}
+
+.main-container select {
+    background-color: #fff;
+    cursor: pointer;
+}
